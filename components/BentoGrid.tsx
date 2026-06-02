@@ -5,10 +5,7 @@ import ActivityTile from "./ActivityTile";
 import { supabase } from "@/lib/supabase";
 
 export default async function BentoGrid() {
-  const {
-    data: courses,
-    error,
-  } = await supabase
+  const { data: courses, error } = await supabase
     .from("Courses")
     .select("*");
 
