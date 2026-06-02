@@ -1,5 +1,7 @@
 # Student Dashboard
 
+A modern learning dashboard built using Next.js, Supabase, Tailwind CSS, and Framer Motion. The application fetches course data from Supabase using Next.js Server Components and displays it in a responsive Bento Grid layout.
+
 ## Tech Stack
 
 * Next.js (App Router)
@@ -9,15 +11,20 @@
 * Lucide React
 
 ## Architecture
-Server Components:
+
+### Server Components
+
 * BentoGrid
 * Course Details Page
 
-Client Components:
+### Client Components
+
 * Sidebar
 * CourseCard
 * HeroTile
 * ActivityTile
+
+### Data Flow
 
 * Server Components fetch course data from Supabase.
 * Client Components handle animations and interactions.
@@ -27,8 +34,11 @@ Client Components:
 
 * Bento Grid Dashboard
 * Dynamic Course Cards
+* Dynamic Icon Rendering
 * Animated Progress Bars
 * Dynamic Course Detail Pages
+* Loading States
+* Error Handling
 * Responsive Layout
 * Supabase Integration
 * Framer Motion Animations
@@ -45,15 +55,19 @@ Required:
 * NEXT_PUBLIC_SUPABASE_URL
 * NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-## Challenger Faced:
-Challenges Faced:
-* Dynamic icon rendering from Supabase
+## Challenges Faced
+
+* Dynamic icon rendering from Supabase data
 * Vercel environment variable configuration
 * Dynamic routing with Next.js App Router
+* Server/Client component separation
 
 ## Useful Links
-*GitHub:
+
+### GitHub Repository
+
 https://github.com/satyam439/Student_dashboard
 
-*Vercel:
+### Live Demo
+
 https://project-kjy65-5071fvhqk-satyam-sahib-sharma-s-projects.vercel.app
