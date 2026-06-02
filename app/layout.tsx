@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Student Dashboard",
-  description: "Modern learning dashboard built with Next.js and Supabase",
+  description: "Student Learning Dashboard",
 };
 
 export default function RootLayout({
