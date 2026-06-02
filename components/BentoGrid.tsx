@@ -31,6 +31,7 @@ export default async function BentoGrid() {
         <CourseCard
           key={course.id}
           title={course.title}
+          id={course.id}
           progress={course.progress}
           iconName={course.icon_name}
           delay={index * 0.15}

@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import {
   BookOpen,
   Rocket,
@@ -10,6 +10,7 @@ import {
 import { motion } from "framer-motion";
 
 interface CourseCardProps {
+  id: string;
   title: string;
   progress: number;
   delay: number;
@@ -17,6 +18,7 @@ interface CourseCardProps {
 }
 
 export default function CourseCard({
+  id,
   title,
   progress,
   delay,
@@ -37,7 +39,8 @@ export default function CourseCard({
   }
 
   return (
-    <motion.article
+    <Link href={`/courses/${id}`}>
+      <motion.article
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
@@ -66,7 +69,8 @@ export default function CourseCard({
             style={{ width: `${progress}%` }}
           />
         </div>
-      </div>
+        </div>
     </motion.article>
-  );
+  </Link>
+);
 }
