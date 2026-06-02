@@ -1,50 +1,59 @@
 # Student Dashboard
 
-A modern learning dashboard built with Next.js, TypeScript, Tailwind CSS, Supabase, and Framer Motion.
+## Tech Stack
+
+* Next.js (App Router)
+* Supabase
+* Tailwind CSS
+* Framer Motion
+* Lucide React
+
+## Architecture
+Server Components:
+* BentoGrid
+* Course Details Page
+
+Client Components:
+* Sidebar
+* CourseCard
+* HeroTile
+* ActivityTile
+
+* Server Components fetch course data from Supabase.
+* Client Components handle animations and interactions.
+* Dynamic routing is implemented using `/courses/[id]`.
 
 ## Features
 
-- Bento Grid Layout
-- Responsive Sidebar
-- Dynamic Course Data from Supabase
-- Animated Progress Bars
-- Activity Graph
-- Framer Motion Animations
-- Loading States
-- Error Handling
+* Bento Grid Dashboard
+* Dynamic Course Cards
+* Animated Progress Bars
+* Dynamic Course Detail Pages
+* Responsive Layout
+* Supabase Integration
+* Framer Motion Animations
 
-## Tech Stack
+## Deployment
 
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- Supabase
-- Framer Motion
-- Lucide React
+* Hosted on Vercel
+* Source code hosted on GitHub
 
-## Setup
+## Environment Variables
 
-1. Clone repository
+Required:
 
-```bash
-npm install
-```
+* NEXT_PUBLIC_SUPABASE_URL
+* NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-2. Create .env.local
+## Challenger Faced:
+Challenges Faced:
+* Dynamic icon rendering from Supabase
+* Vercel environment variable configuration
+* Dynamic routing with Next.js App Router
 
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
-```
+## Useful Links
+*GitHub:
+https://github.com/satyam439/Student_dashboard
 
-3. Run
-
-```bash
-npm run dev
-```
-
-## Architecture
-
-- Server Components fetch course data from Supabase.
-- Client Components handle animations and interactions.
-- Course cards are dynamically rendered from database records.
+*Vercel:
+https://project-kjy65-5071fvhqk-satyam-sahib-sharma-s-projects.vercel.app
